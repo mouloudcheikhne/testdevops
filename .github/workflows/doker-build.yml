@@ -23,4 +23,5 @@ jobs:
 
     # Étape 3 : Construire et pousser l'image Docker
     run: |
-    docker build -t ${{ secrets.DOCKER_USERNAME }}/hhhh .
+    docker build -t ${{ secrets.DOCKER_USERNAME }}/mu_project .
+    docker push  ${{ secrets.DOCKER_USERNAME }}/mu_project .
