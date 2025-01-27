@@ -1,12 +1,10 @@
-from flask import Flask, request, render_template, redirect,session,url_for
-
-
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def affichage():
+def hello():
     return "helllll"
 
 
 if __name__ == '__main__':
-    app.run(port=4000, debug=True)
+    app.run(host = '0.0.0.0',port=5000)
